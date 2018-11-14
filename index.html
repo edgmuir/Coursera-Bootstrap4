@@ -86,11 +86,88 @@
           <img src="img/logo.png" class="img-fluid ml-4" alt="conFusion logo">
         </div>
         <div class="col-12 col-sm align-self-center">
-          <a role="button" class="btn btn-warning nav-link btn-block" data-toggle="tooltip" data-html="true"
-          title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reserveform">Reserve Table</a>
+          <a role="button" class="btn btn-warning nav-link btn-block" data-toggle="modal" data-target="#reserveModal"
+           href="#reserveform">Reserve Table</a>
         </div>
       </div>
     </div>
+
+  <!-- Modal for Reserve Table -->
+      <div id="reserveModal" class="modal" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Reserve a Table</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div><!-- End of modal-header -->
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label class="m-3">Number of Guests</label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="numGuests" value="option1">
+                    <label class="form-check-label">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="numGuests" value="option2">
+                    <label class="form-check-label">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="numGuests" value="option3">
+                    <label class="form-check-label">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="numGuests" value="option4">
+                    <label class="form-check-label">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="numGuests" value="option5">
+                    <label class="form-check-label">5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="numGuests" value="option6">
+                    <label class="form-check-label">6</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="form-row">
+                    <label class="m-3">Section</label>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-success active">
+                        <input type="radio" name="options" id="option1" checked> Non-Smoking
+                      </label>
+                      <label class="btn btn-danger">
+                        <input type="radio" name="options" id="option2"> Smoking
+                      </label>
+                    </div>
+                  </div><!-- end of form-row -->
+                </div><!-- end of form-group -->
+
+                <div class="form-group">
+                  <div class="form-row">
+                    <label class="m-3">Date and Time</label>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Date">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Time">
+                    </div>
+                    </div><!-- end of form-row -->
+                  </div><!-- end of form-group -->
+                </form>
+              </div><!-- End of modal-Body -->
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Reserve</button>
+            </div><!-- End of modal-footer -->
+          </div>
+        </div>
+      </div>
   </header>
 
   <div class="container">
@@ -187,57 +264,6 @@
     </div>
   </div>
 
-  <div class="row row-content align-items-center">
-    <div class="card col-12 col-md-4 offset-4">
-      <div class="card-header text-white bg-warning">
-        <h2 id="reserve">Reserve a Table</h2>
-      </div>
-      <div class="card-body">
-        <form>
-          <div class="form-group">
-            <label class="m-3">Number of Guests</label>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="numGuests" value="option1">
-              <label class="form-check-label">1</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="numGuests" value="option2">
-              <label class="form-check-label">2</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="numGuests" value="option3">
-              <label class="form-check-label">3</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="numGuests" value="option4">
-              <label class="form-check-label">4</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="numGuests" value="option5">
-              <label class="form-check-label">5</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="numGuests" value="option6">
-              <label class="form-check-label">6</label>
-            </div>
-            <div class="form-group">
-              <div class="form-row">
-                <label class="m-3">Date and Time</label>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Date">
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Time">
-                </div>
-              </div><!-- end of form-row -->
-            </div><!-- end of form-group -->
-            <button class="btn btn-primary reserveBtn">Reserve</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -283,11 +309,6 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
 </body>
 
 </html>
